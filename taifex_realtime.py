@@ -42,7 +42,6 @@ def data_write(output_file):
             print(row_format%(*write_data,))
             last_row = write_data.copy()
             record_time = write_data[1]
-            writer = csv.writer(output_file)
             writer.writerow(write_data)
 
 if __name__ == '__main__':
